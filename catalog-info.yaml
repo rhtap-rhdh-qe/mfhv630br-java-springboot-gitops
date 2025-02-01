@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: mfhv630br-java-springboot-gitops
+  description: This is GitOps manifest for mfhv630br-java-springboot   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: mfhv630br-java-springboot
+    backstage.io/kubernetes-id: mfhv630br-java-springboot 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: mfhv630br-java-springboot   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:mfhv630br-java-springboot

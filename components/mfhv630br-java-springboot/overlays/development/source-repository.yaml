@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: mfhv630br-java-springboot-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/mfhv630br-java-springboot
